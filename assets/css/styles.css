@@ -30,7 +30,7 @@ nav>div>a {
     fill:white;
 }
 section{
-    background-image: url(../images/playas.jpeg);
+    background-image: url(../images/playas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -67,10 +67,9 @@ nav>div>a:hover{
     font-size: 20px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
 }
-
 @media only screen and (max-width:600px){
-section{
-     background-image:url('https://ichef.bbci.co.uk/news/976/cpsprodpb/15207/production/_105753568_beach_bbc_jonathan_head.jpg');   
- }
-    
-}
+    section{
+        background-image:url('https://ichef.bbci.co.uk/news/976/cpsprodpb/15207/production/_105753568_beach_bbc_jonathan_head.jpg');   
+    }
+       
+   }
