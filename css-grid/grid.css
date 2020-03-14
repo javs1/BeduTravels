@@ -2,10 +2,11 @@ html{
  height: 100%;
 }
 body{
+    max-width: 1024px;
     height: 100%;
     background-color: indianred;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /*cuatro fr*/
     grid-template-rows: 50px auto 100px;
 }
 header{
@@ -17,9 +18,39 @@ aside{
 }
 section{
     background-color: gray;
-    grid-column: 2/4;
+    grid-column: 2/-1;
+}
+.circulo{
+    width: 400px;
+    height: 400px;
+    background-color: indigo;
+    border-radius: 50% 0  50% 0;
+    transition: all ease-in;
 }
 footer{
     background-color: greenyellow;
     grid-column: 1/-1;
+}
+@media only screen and (max-width:600px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto 100px 100px;
+    }
+    header{
+        grid-column: 1/-1
+    }
+    aside{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+    section{
+        grid-column: 1/-1;
+    }
+    footer{
+        grid-column: 1/-1;
+    }
+    .circulo{
+        border-radius: 0 ;
+        background-color: red;
+    }
 }
