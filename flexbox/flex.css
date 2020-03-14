@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: indianred;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+header{
+    background-color: blueviolet;
+    height: 50px;
+}
+aside{
+    background-color: goldenrod;
+    flex: 1;
+}
+section{
+    background-color: gray;
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+footer{
+    background-color: greenyellow;
+    height: 100px;
+}
+.main{
+    flex: 1;
+    display: flex;
+}
+.circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.purple{
+    background-color: purple;
+    order: 1;
+}
+.red{
+    background-color: red;
+    order: 3;
+}
+.blue{
+    background-color: blue;
+    order: 4;
+}
+.green{
+    background-color: green;
+    order: 2;
+}
+
+
