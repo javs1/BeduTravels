@@ -1,0 +1,32 @@
+.boton, .btn-cualquiera, .btn-cancelar, .btn-entrar {
+  color: white;
+  width: 100%;
+  background-color: white;
+}
+.boton:hover, .btn-cualquiera:hover, .btn-cancelar:hover, .btn-entrar:hover {
+  color: white;
+  background-color: white;
+}
+
+.btn-entrar {
+  background-color: green;
+}
+.btn-entrar:hover {
+  background-color: #00cd00;
+}
+
+.btn-cancelar {
+  background-color: red;
+}
+.btn-cancelar:hover {
+  background-color: #ff4d4d;
+}
+
+.btn-cualquiera {
+  background-color: purple;
+}
+.btn-cualquiera:hover {
+  background-color: #cd00cd;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,46 +1,35 @@
+$green: purple;
+$fullsize:100%;
+$navBack: red;
+@import "navbar";
+@mixin centrar($aling:center) {
+    text-align: $aling;
+}
 html {
     height: 100%;
-  }
-  body {
+}
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     height: 100%;
-  }
+}
   
-  article.verde {
+article.verde {
     background-color: green;
     min-height: 30px;
     max-height: 100px;
     overflow: hidden;
-  }
+}
+
   
-  nav{
-    background-color: #24272a;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav>div>a{
-    color: #ffffff;
-    text-decoration: none;
-    padding-right: 20px;
-  }
-  
-  nav>div>a:hover {
-    color: green;
-  }
-  
-  #bedu-logo {
+#bedu-logo {
     margin-left: 20px;
     width: 50px;
-  }
+}
   
-  #bedu-logo svg {
+#bedu-logo svg {
     fill: white;
-  }
+}
   
 .main-section {
     background-image: url(../images/playas.jpg);
@@ -55,64 +44,65 @@ html {
 
   
 .main-section>div {
-    text-align: center;
+    @include centrar();
     width: 100%;
 }
   
 input::placeholder {
-    text-align: center;
+    
     color: purple;
 }
   
-  input {
+input {
     border: 1px solid #333;
     padding: 10px 20px;
     border-radius: 4px;
     width: 25%;
-  }
+}
   
-  h3 {
+h3 {
     margin-top: 0;
-  }
+}
   
-  .container-title-subtitle > p:first-child {
+.container-title-subtitle > p:first-child {
     font-size: 30px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
-  }
+}
   
-  .container-title-subtitle > p:last-child {
+.container-title-subtitle > p:last-child {
     font-size: 20px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
-  }
+}
   
-  @media only screen and (max-width: 600px) {
-    .main-section {
+@media only screen and (max-width: 600px) {
+.main-section {
       background-image: url('https://www.xtrafondos.com/wallpapers/resized/atardecer-rosa-en-la-playa-3341.jpg?s=large');
     }
-    input {
+input {
       display: none;
     }
-  }
+}
   
-  .row {
+.row {
     display: flex;
-  }
+}
   
-  .iconos {
+.iconos {
     text-align: center;
     padding: 10px 0;
-  }
+}
   
-  .iconos img {
+.iconos img {
     width: 10%;
-  }
+}
   
-  footer {
+footer {
     background-color: #24272a;
     text-align: center;
-  }
-  @media only screen and (max-width: 600px){
+}
+
+@media only screen and (max-width: 600px){
       .row{
           flex-direction: column;
       }
-  }
+}
