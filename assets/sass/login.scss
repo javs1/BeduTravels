@@ -1,0 +1,29 @@
+
+@mixin back($color) {
+    background-color: $color;
+    &:hover{
+       background-color: lighten($color, 15%)
+   }
+}
+.boton{
+    color: white;
+    width: 100%;
+    background-color: white;
+    &:hover{
+        color: white;
+        background-color: white;
+    }
+}
+.btn-entrar{
+ @extend .boton;
+ @include back (green);
+}
+
+.btn-cancelar{
+    @extend .boton;
+    @include back (red);
+}
+.btn-cualquiera{
+    @extend .boton;
+    @include back (purple);
+}
